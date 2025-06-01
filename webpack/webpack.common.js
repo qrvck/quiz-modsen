@@ -61,13 +61,14 @@ module.exports = {
       ],
     }),
 
-    // new ESLintPlugin({
-    //   extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
-    //   emitError: true,
-    //   emitWarning: false,
-    //   failOnError: true,
-    //   failOnWarning: false,
-    // }),
+    new ESLintPlugin({
+      configType: 'flat',
+      extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
+      emitError: true,
+      emitWarning: true,
+      failOnError: true,
+      failOnWarning: false,
+    }),
 
     new ForkTsCheckerWebpackPlugin({
       async: false,

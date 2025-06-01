@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack serve --env development",
     "build": "webpack --env production"
-
   },
   "repository": {
     "type": "git",
@@ -22,18 +21,23 @@
     "@babel/core": "7.27.4",
     "@babel/preset-react": "7.27.1",
     "@babel/preset-typescript": "7.27.1",
+    "@eslint/js": "9.28.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.6.0",
     "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
     "babel-loader": "10.0.0",
     "copy-webpack-plugin": "13.0.0",
     "css-minimizer-webpack-plugin": "7.0.2",
-    "eslint-webpack-plugin": "5.0.1",
+    "eslint": "9.28.0",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-webpack-plugin": "4.2.0",
     "fork-ts-checker-webpack-plugin": "9.1.0",
+    "globals": "16.2.0",
     "html-webpack-plugin": "5.6.3",
     "mini-css-extract-plugin": "2.9.2",
     "tsconfig-paths-webpack-plugin": "4.2.0",
     "typescript": "5.8.3",
+    "typescript-eslint": "8.33.0",
     "webpack": "5.99.9",
     "webpack-cli": "6.0.1",
     "webpack-dev-server": "5.2.1",
