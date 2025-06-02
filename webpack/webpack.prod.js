@@ -3,6 +3,13 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { styleRegex, styleModuleRegex } = require('./constants.js');
 
 module.exports = {
+  output: {
+    // path: path.resolve(__dirname, '../build'),
+    publicPath: '/',
+    // filename: 'build.[contenthash].js',
+    // clean: true,
+  },
+
   mode: 'production',
   devtool: false,
 

@@ -2,6 +2,13 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const { styleRegex, styleModuleRegex } = require('./constants.js');
 
 module.exports = {
+  output: {
+    // path: path.resolve(__dirname, '../build'),
+    publicPath: 'http://localhost:3000/',
+    // filename: 'build.[contenthash].js',
+    // clean: true,
+  },
+
   mode: 'development',
   devtool: 'eval-source-map',
 
