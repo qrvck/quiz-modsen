@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navigate, Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { ROUTING } from 'shared/consts/routing';

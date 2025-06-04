@@ -5,6 +5,7 @@ module.exports = {
   output: {
     // path: path.resolve(__dirname, '../build'),
     publicPath: 'http://localhost:3000/',
+    // publicPath: 'auto',
     // filename: 'build.[contenthash].js',
     // clean: true,
   },

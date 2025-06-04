@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useMenuStore } from 'app/store';
 import { ROUTING } from 'shared/consts/routing';
