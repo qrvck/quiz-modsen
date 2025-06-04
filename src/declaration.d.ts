@@ -42,14 +42,15 @@ declare module '*.webp' {
 }
 
 declare module '*.svg' {
-  import * as React from 'react';
+  import { FC, SVGProps } from 'react';
+  const content: FC<SVGProps<SVGElement>>;
+  export default content;
+}
 
-  export const ReactComponent: React.FunctionComponent<
-    React.SVGProps<SVGSVGElement> & { title?: string }
-  >;
-
-  const src: string;
-  export default src;
+declare module '*.svg?url' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const content: any;
+  export default content;
 }
 
 declare module '*.module.css' {
