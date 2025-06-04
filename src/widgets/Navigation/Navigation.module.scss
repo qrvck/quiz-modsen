@@ -12,7 +12,6 @@
   transform: translateX(-104%);
   transition: transform 0.3s ease-in-out;
 
-
   &__open {
     transform: translateX(0);
   }
@@ -45,11 +44,12 @@
 
   font-size: $font-size-lg;
   line-height: 0;
-  border: 1px solid black;
+  border: 1px solid $black;
   border-radius: 50%;
 
   &:hover {
-    opacity: 0.5;
+    color: $cornflower;
+    border-color: $cornflower;
   }
 
   &:active {
