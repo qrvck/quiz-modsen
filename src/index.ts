@@ -1,1 +1,1 @@
-import('./app/App');
+import('./app/render');

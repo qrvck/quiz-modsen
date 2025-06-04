@@ -1,24 +1,24 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { Navigate, Route, Routes, BrowserRouter } from 'react-router-dom';
 
-import { RemoteContent } from 'remote/RemoteContent';
+import { ROUTING } from 'shared/consts/routing';
+import { Layout } from 'app/UI/Layout';
+import { MainPage, GamePage } from 'pages';
+import './index.scss';
 
-console.log('Game', RemoteContent);
+export function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index path={ROUTING.HOME} element={<MainPage />} />
+          <Route path={ROUTING.GAME} element={<GamePage />} />
+          {/* <Route path={ROUTING.STATISTICS} element={<BankCardPage />} />
+        <Route path={ROUTING.ABOUT_US} element={<ContactsPage />} /> */}
 
-const rootElement = document.getElementById('root');
-
-if (!rootElement) {
-  throw new Error('Failed to find the root element');
+          <Route path={ROUTING.OTHER} element={<Navigate to={ROUTING.HOME} />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-const root = createRoot(rootElement);
-
-root.render(
-  <BrowserRouter>
-    <h1>Title</h1>
-    <section>
-      <RemoteContent />
-    </section>
-  </BrowserRouter>
-);
