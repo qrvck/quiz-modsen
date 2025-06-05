@@ -3,6 +3,7 @@ import { useMenuStore } from 'app/store';
 import { ROUTING } from 'shared/consts/routing';
 import { Container } from 'shared/UI/container';
 import BurgerMenuIcon from 'shared/icons/burger-menu.svg';
+import { TITLE_TEXT } from './Header.consts';
 import styles from './Header.module.scss';
 
 export function Header() {
@@ -21,7 +22,7 @@ export function Header() {
           </button>
 
           <NavLink className={styles.title} to={ROUTING.HOME}>
-            <h1>Quiz</h1>
+            <h1>{TITLE_TEXT}</h1>
           </NavLink>
         </div>
       </Container>
