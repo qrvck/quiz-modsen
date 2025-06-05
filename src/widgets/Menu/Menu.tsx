@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { ROUTING } from 'shared/consts/routing';
 import { useClickOutside } from 'shared/hooks/use-click-outside';
 import { useMenuStore } from 'app/store';
+import { CLOSE_BUTTON_TEXT, NAV_ITEMS_TEXT } from './Menu.consts';
 import styles from './Menu.module.scss';
 
 export function Menu() {
@@ -47,24 +48,24 @@ export function Menu() {
       ref={wrapperRef}
     >
       <button className={styles.closeButton} onClick={handleClickOnCloseButton}>
-        ⬅︎
+        {CLOSE_BUTTON_TEXT}
       </button>
 
       <nav className={styles.navigation} onClick={handleNavigationClick}>
         <NavLink className={styles.link} to={ROUTING.HOME}>
-          🏠 Home
+          {NAV_ITEMS_TEXT.HOME}
         </NavLink>
 
         <NavLink className={styles.link} to={ROUTING.GAME}>
-          🕹️ Game
+          {NAV_ITEMS_TEXT.GAME}
         </NavLink>
 
         <NavLink className={styles.link} to={ROUTING.STATISTICS}>
-          📗 Statistics
+          {NAV_ITEMS_TEXT.STATISTICS}
         </NavLink>
 
         <NavLink className={styles.link} to={ROUTING.ABOUT_US}>
-          🌀 About us
+          {NAV_ITEMS_TEXT.ABOUT_US}
         </NavLink>
       </nav>
     </div>
