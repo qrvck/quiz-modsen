@@ -1,3 +1,4 @@
+import { Greeting } from 'widgets/Greeting';
 export function MainPage() {
-  return <div>MainPage</div>;
+  return <Greeting />;
 }

@@ -1,6 +1,11 @@
-import { PropsWithChildren } from 'react';
+import { HTMLAttributes } from 'react';
+import clsx from 'clsx';
 import styles from './Container.module.scss';
 
-export function Container({ children }: PropsWithChildren) {
-  return <div className={styles.container}>{children}</div>;
+export function Container({ children, className, ...rest }: HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div className={clsx(styles.container, className)} {...rest}>
+      {children}
+    </div>
+  );
 }

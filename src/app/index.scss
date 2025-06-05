@@ -1,5 +1,11 @@
 @use '/src/shared/styles' as *;
 
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-size: $font-size-base;
   font-family: 'Roboto', sans-serif;
