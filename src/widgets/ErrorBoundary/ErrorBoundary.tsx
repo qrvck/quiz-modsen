@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { ErrorBoundaryProps, ErrorBoundaryState } from './ErrorBoundary.types';
 import { Button } from 'shared/UI/Button';
+import { ROUTING } from 'shared/consts/routing';
 import { GO_HOME_BUTTON_TEXT, REFRESH_BUTTON_TEXT, TEXT_1, TEXT_2 } from './ErrorBoundary.consts';
 import styles from './ErrorBoundary.module.scss';
 
@@ -22,7 +23,9 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
           <p>{TEXT_2}</p>
           <div className={styles.buttonWrapper}>
             <Button onClick={() => window.location.reload()}>{REFRESH_BUTTON_TEXT}</Button>
-            <Button onClick={() => window.location.assign('/')}>{GO_HOME_BUTTON_TEXT}</Button>
+            <Button onClick={() => window.location.assign(ROUTING.HOME)}>
+              {GO_HOME_BUTTON_TEXT}
+            </Button>
           </div>
         </div>
       );
