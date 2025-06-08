@@ -1,4 +1,5 @@
-export const BANNER_SRC = 'https://picsum.photos/400/200?random=1';
+// export const BANNER_SRC = `https://doodleipsum.com/400x200/abstract`;
+export const BANNER_SRC = `https://random-image-pepebigotes.vercel.app/api/random-image`;
 export const BANNER_ALT = 'Welcome Banner';
 export const TITLE_TEXT = 'Welcome to the Quiz App!';
 
