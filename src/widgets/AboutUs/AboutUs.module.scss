@@ -1,0 +1,27 @@
+@use '/src/shared/styles' as *;
+
+.section,
+.container,
+.wrapper {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+  padding: 30px 0;
+
+}
+
+.title {
+  color: $dark-orange;
+  font-size: $font-size-xl;
+}
+
+.desc {
+  max-width: 625px;
+  color: $text-tertiary;
+}

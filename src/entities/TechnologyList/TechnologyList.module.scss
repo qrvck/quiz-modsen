@@ -1,0 +1,26 @@
+@use '/src/shared/styles' as *;
+
+.wrapper {
+  width: 100%;
+  max-width: 625px;
+  padding: 21px;
+  border-radius: 8px;
+  background-color: $floral-white;
+  border: 1px solid $dark-orange;
+}
+
+.title {
+  text-align: center;
+  font-size: $font-size-md;
+}
+
+.list {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+
+  font-size: $font-size-sm;
+  color: $dark-orange;
+}
