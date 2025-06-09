@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import { useMenuStore } from 'app/store';
 import { ROUTING } from 'shared/consts/routing';
-import { Container } from 'shared/UI/container';
+import { Container } from 'shared/UI/Container';
 import BurgerMenuIcon from 'shared/icons/burger-menu.svg';
-import { TITLE_TEXT } from './Header.consts';
+import { TITLE_TEXT } from './model/Header.consts';
 import styles from './Header.module.scss';
 
 export function Header() {

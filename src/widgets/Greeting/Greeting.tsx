@@ -1,11 +1,11 @@
-import { Container } from 'shared/UI/container';
+import { Container } from 'shared/UI/Container';
 import {
   BANNER_ALT,
   BANNER_SRC,
   START_BUTTON_TEXT,
   SUBTITLE_TEXT,
   TITLE_TEXT,
-} from './Greeting.consts';
+} from './model/Greeting.consts';
 import { Button } from 'shared/UI/Button';
 import styles from './Greeting.module.scss';
 import { useNavigate } from 'react-router-dom';

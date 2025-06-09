@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { ROUTING } from 'shared/consts/routing';
 import { useClickOutside } from 'shared/hooks/use-click-outside';
 import { useMenuStore } from 'app/store';
-import { CLOSE_BUTTON_TEXT, NAV_ITEMS_TEXT } from './Menu.consts';
+import { CLOSE_BUTTON_TEXT, NAV_ITEMS_TEXT } from './model/Menu.consts';
 import styles from './Menu.module.scss';
 
 export function Menu() {

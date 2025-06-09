@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from 'react';
-import { useClickOutsideProps } from './useClickOutside.types';
+import { useClickOutsideProps } from './model/useClickOutside.types';
 
 export function useClickOutside({ ref, callback, capture }: useClickOutsideProps) {
   const handleClickOutside = useCallback(
