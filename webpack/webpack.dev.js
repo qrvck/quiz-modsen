@@ -4,7 +4,7 @@ const { styleRegex, styleModuleRegex } = require('./constants.js');
 module.exports = {
   output: {
     // path: path.resolve(__dirname, '../build'),
-    publicPath: 'http://localhost:3000/',
+    publicPath: '/',
     // publicPath: 'auto',
     // filename: 'build.[contenthash].js',
     // clean: true,
@@ -75,7 +75,7 @@ module.exports = {
   ],
 
   devServer: {
-    port: 3000,
+    port: 3300,
     historyApiFallback: true,
     hot: true,
     open: true,
