@@ -1,1 +1,1 @@
-export { useMenuStore } from './menu-store';
+export { useMenuStore } from './menuStore';

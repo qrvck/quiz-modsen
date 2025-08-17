@@ -2,7 +2,7 @@ import { Navigate, Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { ROUTING } from 'shared/consts/routing';
 import { Layout } from 'app/UI/Layout';
-import { MainPage, GamePage, AboutUsPage } from 'pages';
+import { MainPage, GamePage, AboutUsPage, StatisticsPage } from 'pages';
 import './index.scss';
 
 export function App() {
@@ -12,7 +12,7 @@ export function App() {
         <Route element={<Layout />}>
           <Route index path={ROUTING.HOME} element={<MainPage />} />
           <Route path={ROUTING.GAME} element={<GamePage />} />
-          {/* <Route path={ROUTING.STATISTICS} element={<BankCardPage />} /> */}
+          <Route path={ROUTING.STATISTICS} element={<StatisticsPage />} />
           <Route path={ROUTING.ABOUT_US} element={<AboutUsPage />} />
 
           <Route path={ROUTING.OTHER} element={<Navigate to={ROUTING.HOME} />} />
