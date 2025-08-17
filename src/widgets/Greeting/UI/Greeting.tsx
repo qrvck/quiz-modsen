@@ -5,7 +5,7 @@ import {
   START_BUTTON_TEXT,
   SUBTITLE_TEXT,
   TITLE_TEXT,
-} from './model/Greeting.consts';
+} from '../consts/Greeting.consts';
 import { Button } from 'shared/UI/Button';
 import styles from './Greeting.module.scss';
 import { useNavigate } from 'react-router-dom';

@@ -1,1 +1,1 @@
-export { Suspense } from './Suspense';
+export { Suspense } from './UI/Suspense';

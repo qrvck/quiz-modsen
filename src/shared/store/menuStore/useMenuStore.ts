@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { NavigationStore } from './useMenuStore.types';
+import { NavigationStore } from './model/useMenuStore.types';
 
 export const useMenuStore = create<NavigationStore>()((set) => ({
   isOpen: false,

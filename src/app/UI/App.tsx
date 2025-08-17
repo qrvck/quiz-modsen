@@ -1,9 +1,9 @@
 import { Navigate, Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { ROUTING } from 'shared/consts/routing';
-import { Layout } from 'app/UI/Layout';
+import { Layout } from 'shared/UI/Layout';
 import { MainPage, GamePage, AboutUsPage, StatisticsPage } from 'pages';
-import './index.scss';
+import '../styles/global.scss';
 
 export function App() {
   return (

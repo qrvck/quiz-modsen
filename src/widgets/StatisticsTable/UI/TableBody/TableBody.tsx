@@ -1,4 +1,4 @@
-import { useStatisticsStore } from 'app/store/statisticsStore';
+import { useStatisticsStore } from 'shared/store/statisticsStore';
 
 import styles from './TableBody.module.scss';
 

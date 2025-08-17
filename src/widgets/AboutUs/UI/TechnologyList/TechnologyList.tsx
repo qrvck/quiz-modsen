@@ -1,4 +1,4 @@
-import { TITLE_TEXT, TECHNOLOGY_LIST } from './model/TechnologyList.consts';
+import { TITLE_TEXT, TECHNOLOGY_LIST } from '../../consts/technologyList.consts';
 import styles from './TechnologyList.module.scss';
 
 export function TechnologyList() {

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { ErrorBoundaryProps, ErrorBoundaryState } from './model/ErrorBoundary.types';
+import { ErrorBoundaryProps, ErrorBoundaryState } from '../model/errorBoundary.types';
 import { Button } from 'shared/UI/Button';
 import { ROUTING } from 'shared/consts/routing';
 import {
@@ -7,7 +7,7 @@ import {
   REFRESH_BUTTON_TEXT,
   TEXT_1,
   TEXT_2,
-} from './model/ErrorBoundary.consts';
+} from '../consts/errorBoundary.consts';
 import styles from './ErrorBoundary.module.scss';
 
 export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
