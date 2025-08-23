@@ -21,7 +21,7 @@ export function Header() {
             <BurgerMenuIcon className={styles.burgerMenuIcon} />
           </button>
 
-          <NavLink className={styles.title} to={ROUTING.HOME}>
+          <NavLink className={styles.titleLint} to={ROUTING.HOME}>
             <h1>{TITLE_TEXT}</h1>
           </NavLink>
         </div>

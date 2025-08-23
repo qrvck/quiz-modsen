@@ -6,35 +6,13 @@
   flex-direction: column;
 }
 
-body {
+html {
   font-size: $font-size-base;
   font-family: 'Roboto', sans-serif;
   color: $text-primary;
   font-weight: $font-weight-normal;
-}
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-  color: inherit;
-  border: none;
-  background-color: transparent;
-}
-
-button {
-  cursor: pointer;
-
-  &:disabled {
-    cursor: auto;
+  @include media-down(sm) {
+    font-size: $font-size-sm;
   }
 }

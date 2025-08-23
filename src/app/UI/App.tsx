@@ -4,6 +4,7 @@ import { ROUTING } from 'shared/consts/routing';
 import { Layout } from 'shared/UI/Layout';
 import { MainPage, GamePage, AboutUsPage, StatisticsPage } from 'pages';
 import '../styles/global.scss';
+import '../styles/reset.scss';
 
 export function App() {
   return (

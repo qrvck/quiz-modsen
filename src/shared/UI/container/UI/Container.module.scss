@@ -1,5 +1,15 @@
+@use '/src/shared/styles' as *;
+
 .container {
   margin: 0 auto;
   max-width: 1600px;
-  padding: 0 40px;
+  padding: 0 50px;
+
+  @include media-down(md) {
+    padding: 0 30px;
+  }
+
+  @include media-down(sm) {
+    padding: 0 10px;
+  }
 }
