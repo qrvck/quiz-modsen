@@ -18,7 +18,7 @@ export function Header() {
       <Container>
         <div className={styles.wrapper}>
           <button className={styles.burgerMenu} onClick={handleClickOnMenuButton}>
-            <BurgerMenuIcon />
+            <BurgerMenuIcon className={styles.burgerMenuIcon} />
           </button>
 
           <NavLink className={styles.title} to={ROUTING.HOME}>
