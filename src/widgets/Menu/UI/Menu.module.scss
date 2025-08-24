@@ -1,0 +1,58 @@
+@use '/src/shared/styles' as *;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px 15px;
+
+  background-color: $bg-secondary;
+  box-shadow: 4px 0px 8px 0px $shadow-dark;
+  transform: translateX(-104%);
+  transition: transform 0.3s ease-in-out;
+
+  &__open {
+    transform: translateX(0);
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 55px;
+}
+
+.link {
+  color: $text-primary;
+  font-weight: $font-weight-bold;
+
+  &:global(.active) {
+    font-size: $font-size-xl;
+  }
+}
+
+.closeButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: auto;
+
+  font-size: $font-size-lg;
+  line-height: 0;
+  border: 1px solid $black;
+  border-radius: 50%;
+
+  &:hover {
+    color: $cornflower;
+    border-color: $cornflower;
+  }
+
+  &:active {
+    transform: translate(1px, 1px);
+  }
+}

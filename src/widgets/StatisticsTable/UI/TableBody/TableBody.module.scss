@@ -1,0 +1,21 @@
+.tbody .td {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align:middle;
+}
+.tbody .tr:nth-child(even) {
+	background: #f3f3f3;
+}
+.tbody .td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.tbody .td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+}
