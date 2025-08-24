@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: auto;
+  }
+}
