@@ -1,5 +1,7 @@
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const { styleRegex, styleModuleRegex } = require('./constants.js');
+const deps = require('../package.json').dependencies;
 
 module.exports = {
   output: {
@@ -69,6 +71,26 @@ module.exports = {
   },
 
   plugins: [
+    new ModuleFederationPlugin({
+      name: 'host',
+      filename: 'remoteEntry.js',
+      remotes: {
+        remote: 'remote@http://localhost:3301/remoteEntry.js',
+      },
+      exposes: {},
+      shared: {
+        ...deps,
+        react: {
+          singleton: true,
+          requiredVersion: deps.react,
+        },
+        'react-dom': {
+          singleton: true,
+          requiredVersion: deps['react-dom'],
+        },
+      },
+    }),
+
     new ReactRefreshWebpackPlugin({
       overlay: false,
     }),
