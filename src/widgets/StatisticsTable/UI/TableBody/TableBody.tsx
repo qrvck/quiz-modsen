@@ -1,17 +1,19 @@
 import { useStatisticsStore } from 'shared/store/statisticsStore';
 
+import { EMPTY_DATA } from '../../consts/tableBody.consts';
 import styles from './TableBody.module.scss';
 
 export function TableBody() {
   const results = useStatisticsStore((state) => state.results);
+  const tableData = results.length ? results : EMPTY_DATA;
 
   return (
     <tbody className={styles.tbody}>
-      {results.map(
+      {tableData.map(
         ({ id, avatarURL, firstName, lastName, age, correctAnswers, incorrectAnswers }) => (
           <tr className={styles.tr} key={id}>
             <td className={styles.td}>
-              <img className={styles.avatar} src={avatarURL} />
+              {avatarURL && <img className={styles.avatar} src={avatarURL} />}
             </td>
             <td className={styles.td}>{firstName}</td>
             <td className={styles.td}>{lastName}</td>
