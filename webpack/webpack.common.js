@@ -4,9 +4,7 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const { moduleFileExtensions } = require('./constants.js');
-const deps = require('../package.json').dependencies;
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/index.ts'),
