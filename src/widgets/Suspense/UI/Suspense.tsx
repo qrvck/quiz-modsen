@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import { Loader } from 'shared/UI/Loader';
+
 import styles from './Suspense.module.scss';
 
 export function Suspense({ children }: PropsWithChildren) {

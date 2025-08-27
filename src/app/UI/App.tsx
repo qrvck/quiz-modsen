@@ -1,10 +1,10 @@
-import { Navigate, Route, Routes, BrowserRouter } from 'react-router-dom';
-
-import { ROUTING } from 'shared/consts/routing';
-import { Layout } from 'shared/UI/Layout';
-import { MainPage, GamePage, AboutUsPage, StatisticsPage } from 'pages';
 import '../styles/global.scss';
 import '../styles/reset.scss';
+
+import { AboutUsPage, GamePage, MainPage, StatisticsPage } from 'pages';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { ROUTING } from 'shared/consts/routing';
+import { Layout } from 'shared/UI/Layout';
 
 export function App() {
   return (

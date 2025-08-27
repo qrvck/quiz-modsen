@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import { Suspense } from 'widgets/Suspense';
 import { Header } from 'widgets/Header';
 import { Menu } from 'widgets/Menu';
+import { Suspense } from 'widgets/Suspense';
+
 import styles from './Layout.module.scss';
 
 export function Layout() {

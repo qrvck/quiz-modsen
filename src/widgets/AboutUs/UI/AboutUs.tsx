@@ -1,7 +1,8 @@
-import { TechnologyList } from './TechnologyList';
 import { Container } from 'shared/UI/Container';
+
 import { DESC_1_TEXT, DESC_2_TEXT, DESC_3_TEXT, TITLE_TEXT } from '../model/AboutUs.consts';
 import styles from './AboutUs.module.scss';
+import { TechnologyList } from './TechnologyList';
 
 export function AboutUs() {
   return (

@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { useMenuStore } from 'shared/store';
 import { ROUTING } from 'shared/consts/routing';
-import { Container } from 'shared/UI/Container';
 import BurgerMenuIcon from 'shared/icons/burger-menu.svg';
+import { useMenuStore } from 'shared/store';
+import { Container } from 'shared/UI/Container';
+
 import { TITLE_TEXT } from '../consts/Header.consts';
 import styles from './Header.module.scss';
 
