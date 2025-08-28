@@ -1,4 +1,5 @@
 import { getRandomNumber } from 'shared/lib/getRandomNumber';
+
 import styles from './Loader.module.scss';
 
 const VIEWS = ['view-1', 'view-2', 'view-3'];

@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+import { ROUTING } from 'shared/consts/routing';
+import { Button } from 'shared/UI/Button';
 import { Container } from 'shared/UI/Container';
+
 import {
   BANNER_ALT,
   BANNER_SRC,
@@ -6,10 +10,7 @@ import {
   SUBTITLE_TEXT,
   TITLE_TEXT,
 } from '../consts/Greeting.consts';
-import { Button } from 'shared/UI/Button';
 import styles from './Greeting.module.scss';
-import { useNavigate } from 'react-router-dom';
-import { ROUTING } from 'shared/consts/routing';
 
 export function Greeting() {
   const navigate = useNavigate();

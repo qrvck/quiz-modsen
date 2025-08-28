@@ -1,9 +1,10 @@
 import { useLayoutEffect } from 'react';
 import { rehydrateStatisticsStore } from 'shared/store/statisticsStore';
 import { Container } from 'shared/UI/Container';
-import { TableHead } from './TableHead';
-import { TableBody } from './TableBody';
+
 import styles from './StatisticsTable.module.scss';
+import { TableBody } from './TableBody';
+import { TableHead } from './TableHead';
 
 export function StatisticsTable() {
   useLayoutEffect(() => {

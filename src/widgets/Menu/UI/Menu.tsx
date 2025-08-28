@@ -1,9 +1,10 @@
-import { useRef, useCallback, MouseEvent } from 'react';
 import clsx from 'clsx';
+import { MouseEvent, useCallback, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { ROUTING } from 'shared/consts/routing';
 import { useClickOutside } from 'shared/hooks/useClickOutside';
 import { useMenuStore } from 'shared/store';
+
 import { CLOSE_BUTTON_TEXT, NAV_ITEMS_TEXT } from '../consts/menu.consts';
 import styles from './Menu.module.scss';
 

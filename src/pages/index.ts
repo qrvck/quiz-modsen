@@ -1,4 +1,4 @@
-export { MainPage } from './MainPage';
-export { GamePage } from './GamePage';
 export { AboutUsPage } from './AboutUsPage';
+export { GamePage } from './GamePage';
+export { MainPage } from './MainPage';
 export { StatisticsPage } from './StatisticsPage';

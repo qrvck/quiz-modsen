@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { StatisticsStore, Result } from './model/statisticsStore.types';
+
+import { Result, StatisticsStore } from './model/statisticsStore.types';
 
 export const useStatisticsStore = create<StatisticsStore>()(
   persist(

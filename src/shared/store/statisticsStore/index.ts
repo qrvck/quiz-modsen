@@ -1,1 +1,1 @@
-export { useStatisticsStore, rehydrateStatisticsStore } from './useStatisticsStore';
+export { rehydrateStatisticsStore, useStatisticsStore } from './useStatisticsStore';
