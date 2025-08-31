@@ -4,13 +4,6 @@ import { ErrorBoundary } from 'widgets/ErrorBoundary';
 
 import { App } from './UI/App';
 
-// 123123
-// // 123123dfsgdfsg
-
-// let r = 22;
-
-// const r = 'sdf'
-
 const rootElement = document.getElementById('root');
 
 if (!rootElement) {
