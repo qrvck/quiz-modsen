@@ -14,8 +14,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noImplicitAny": true,
+    "types": ["@testing-library/jest-dom"],
     "jsx": "react-jsx",
-    "baseUrl": "src",
+    "baseUrl": "src"
   },
 
   "include": ["src"]
