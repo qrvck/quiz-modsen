@@ -1,3 +1,10 @@
+if grep -qE "^(Merge|Revert|Initial commit)" "$1"; then
+    echo ""
+    echo "✅ Automatic commit detected, skipping validation"
+    echo ""
+    exit 0
+fi
+
 commit_regex='^(feat|fix|chore|docs|test|style|refactor|perf|build|ci|revert)(\(.+\))?: .{1,50}'
 
 if ! grep -qE "$commit_regex" "$1"; then
