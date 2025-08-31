@@ -6,6 +6,7 @@ import { useMenuStore } from 'shared/store';
 
 import { CLOSE_BUTTON_TEXT, NAV_ITEMS_LIST } from '../consts/menu.consts';
 import styles from './Menu.module.scss';
+import { Signature } from './Signature';
 
 export function Menu() {
   const { isOpen, setIsOpen } = useMenuStore();
@@ -47,17 +48,21 @@ export function Menu() {
       })}
       ref={wrapperRef}
     >
-      <button className={styles.closeButton} onClick={handleClickOnCloseButton}>
-        {CLOSE_BUTTON_TEXT}
-      </button>
+      <div>
+        <button className={styles.closeButton} onClick={handleClickOnCloseButton}>
+          {CLOSE_BUTTON_TEXT}
+        </button>
 
-      <nav className={styles.navigation} onClick={handleNavigationClick}>
-        {NAV_ITEMS_LIST.map(({ text, rout }) => (
-          <NavLink className={styles.link} key={rout} to={rout}>
-            {text}
-          </NavLink>
-        ))}
-      </nav>
+        <nav className={styles.navigation} onClick={handleNavigationClick}>
+          {NAV_ITEMS_LIST.map(({ text, rout }) => (
+            <NavLink className={styles.link} key={rout} to={rout}>
+              {text}
+            </NavLink>
+          ))}
+        </nav>
+      </div>
+
+      <Signature />
     </div>
   );
 }

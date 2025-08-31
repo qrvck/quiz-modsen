@@ -7,6 +7,10 @@
   bottom: 0;
   padding: 20px 15px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-color: $bg-secondary;
   box-shadow: 4px 0px 8px 0px $shadow-dark;
   transform: translateX(-104%);

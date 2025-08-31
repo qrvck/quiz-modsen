@@ -1,0 +1,25 @@
+@use '/src/shared/styles' as *;
+@use './Signature.keyframes.scss' as *;
+
+
+.signature {
+  align-self: center;
+  font-size: $font-size-sm;
+}
+
+.emojiWrapper {
+  display: inline-block;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.emoji {
+  display: inline-block;
+  font-size: $font-size-xl;
+  animation: whale-swim 3s ease-in-out infinite;
+  transform-origin: center;
+  cursor: default;
+}
