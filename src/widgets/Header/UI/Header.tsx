@@ -4,7 +4,7 @@ import BurgerMenuIcon from 'shared/icons/burger-menu.svg';
 import { useMenuStore } from 'shared/store';
 import { Container } from 'shared/UI/Container';
 
-import { TITLE_TEXT } from '../consts/Header.consts';
+import { DATA_CY, TITLE_TEXT } from '../consts/Header.consts';
 import styles from './Header.module.scss';
 
 export function Header() {
@@ -18,11 +18,15 @@ export function Header() {
     <header className={styles.header}>
       <Container>
         <div className={styles.wrapper}>
-          <button className={styles.burgerMenu} onClick={handleClickOnMenuButton}>
+          <button
+            className={styles.burgerMenu}
+            data-cy={DATA_CY.openMenuButton}
+            onClick={handleClickOnMenuButton}
+          >
             <BurgerMenuIcon className={styles.burgerMenuIcon} />
           </button>
 
-          <NavLink className={styles.titleLint} to={ROUTING.HOME}>
+          <NavLink className={styles.titleLint} to={ROUTING.HOME} data-cy={DATA_CY.titleLink}>
             <h1>{TITLE_TEXT}</h1>
           </NavLink>
         </div>
