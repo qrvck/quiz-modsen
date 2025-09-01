@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { ROUTING } from 'shared/consts/routing';
 import { Button } from 'shared/UI/Button';
-import { Container } from 'shared/UI/Container';
 
 import {
   BANNER_ALT,
@@ -21,14 +20,10 @@ export function Greeting() {
 
   return (
     <section className={styles.section}>
-      <Container className={styles.container}>
-        <div className={styles.wrapper}>
-          <img className={styles.banner} src={BANNER_SRC} alt={BANNER_ALT} />
-          <h2 className={styles.title}>{TITLE_TEXT}</h2>
-          <p className={styles.subtitle}>{SUBTITLE_TEXT}</p>
-          <Button onClick={handleClickOnStartButton}>{START_BUTTON_TEXT}</Button>
-        </div>
-      </Container>
+      <img className={styles.banner} src={BANNER_SRC} alt={BANNER_ALT} />
+      <h2 className={styles.title}>{TITLE_TEXT}</h2>
+      <p className={styles.subtitle}>{SUBTITLE_TEXT}</p>
+      <Button onClick={handleClickOnStartButton}>{START_BUTTON_TEXT}</Button>
     </section>
   );
 }

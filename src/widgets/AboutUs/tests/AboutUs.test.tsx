@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { ReactNode } from 'react';
 
 import { DESC_1_TEXT, DESC_2_TEXT, DESC_3_TEXT, TITLE_TEXT } from '../model/AboutUs.consts';
@@ -21,9 +21,10 @@ jest.mock('shared/UI/Container', () => ({
 
 describe('AboutUs Component', () => {
   it('renders content in correct order', () => {
-    render(<AboutUs />);
+    const { container } = render(<AboutUs />);
 
-    const wrapper = screen.getByTestId(CONTAINER_TEST_ID).firstElementChild;
+    const section = container.querySelector('section');
+    const wrapper = section?.firstElementChild;
     const children = wrapper?.children;
 
     expect(children).toHaveLength(5);

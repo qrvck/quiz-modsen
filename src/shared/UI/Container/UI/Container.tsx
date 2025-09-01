@@ -1,11 +1,11 @@
 import clsx from 'clsx';
-import { HTMLAttributes } from 'react';
 
+import { ContainerProps } from '../model/container.types';
 import styles from './Container.module.scss';
 
-export function Container({ children, className, ...rest }: HTMLAttributes<HTMLDivElement>) {
+export function Container({ children, className, width, height, ...rest }: ContainerProps) {
   return (
-    <div className={clsx(styles.container, className)} {...rest}>
+    <div style={{ width, height }} className={clsx(styles.container, className)} {...rest}>
       {children}
     </div>
   );
