@@ -1,4 +1,4 @@
-import { DESC_1_TEXT, DESC_2_TEXT, DESC_3_TEXT, TITLE_TEXT } from '../model/AboutUs.consts';
+import { DESC_1_TEXT, DESC_2_TEXT, DESC_3_TEXT, TITLE_TEXT } from '../consts/aboutUs.consts';
 import styles from './AboutUs.module.scss';
 import { TechnologyList } from './TechnologyList';
 

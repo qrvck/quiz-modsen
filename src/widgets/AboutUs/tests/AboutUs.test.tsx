@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { ReactNode } from 'react';
 
-import { DESC_1_TEXT, DESC_2_TEXT, DESC_3_TEXT, TITLE_TEXT } from '../model/AboutUs.consts';
+import { DESC_1_TEXT, DESC_2_TEXT, DESC_3_TEXT, TITLE_TEXT } from '../consts/aboutUs.consts';
 import { AboutUs } from '../UI/AboutUs';
 
 const TECHNOLOGY_LIST_TEST_ID = 'technology-list';
