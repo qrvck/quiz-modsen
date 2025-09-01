@@ -61,9 +61,10 @@ describe('Menu Component', () => {
       setIsOpen: mockSetIsOpen,
     });
 
-    renderWithRouter(<Menu />);
+    const { container } = renderWithRouter(<Menu />);
 
-    const wrapper = screen.getByRole('navigation').parentElement;
+    const wrapper = container.querySelector('.wrapper');
+
     expect(wrapper).toHaveClass('wrapper');
     expect(wrapper).not.toHaveClass('wrapper__open');
   });
@@ -74,9 +75,9 @@ describe('Menu Component', () => {
       setIsOpen: mockSetIsOpen,
     });
 
-    renderWithRouter(<Menu />);
+    const { container } = renderWithRouter(<Menu />);
 
-    const wrapper = screen.getByRole('navigation').parentElement;
+    const wrapper = container.querySelector('.wrapper');
     expect(wrapper).toHaveClass('wrapper');
     expect(wrapper).toHaveClass('wrapper__open');
   });

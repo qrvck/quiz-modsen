@@ -1,5 +1,10 @@
+import { Container } from 'shared/UI/Container';
 import { AboutUs } from 'widgets/AboutUs';
 
 export function AboutUsPage() {
-  return <AboutUs />;
+  return (
+    <Container>
+      <AboutUs />
+    </Container>
+  );
 }
