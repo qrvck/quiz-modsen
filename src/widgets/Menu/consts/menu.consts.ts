@@ -30,3 +30,9 @@ export const NAV_ITEMS_LIST = [
 ];
 
 export const CLOSE_BUTTON_TEXT = '⬅︎';
+
+export const DATA_CY = {
+  nav: 'menu:nav',
+  closeNavButton: 'menu:close-nav-button',
+  navItem: 'menu:nav-item',
+};
