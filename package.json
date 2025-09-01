@@ -13,6 +13,8 @@
     "test:show-config": "jest --config=jest/jest.config.js --showConfig",
     "test:coverage": "jest --config=jest/jest.config.js --coverage",
     "test:watch": "jest --config=jest/jest.config.js --watch",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "prepare": "husky"
   },
   "repository": {
@@ -43,6 +45,7 @@
     "copy-webpack-plugin": "13.0.0",
     "css-loader": "7.1.2",
     "css-minimizer-webpack-plugin": "7.0.2",
+    "cypress": "15.0.0",
     "eslint": "9.28.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-prettier": "5.4.1",
