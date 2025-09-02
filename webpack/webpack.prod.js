@@ -23,7 +23,7 @@ module.exports = {
             options: {
               esModule: true,
               modules: {
-                localIdentName: '[name]__[local]__[hash:base64:5]',
+                localIdentName: '[hash:base64:8]',
                 exportLocalsConvention: 'as-is',
                 namedExport: false,
                 mode: 'local',
@@ -33,7 +33,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
         ],
@@ -59,7 +59,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
         ],
