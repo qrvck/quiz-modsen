@@ -9,7 +9,7 @@ export const useStatisticsStore = create<StatisticsStore>()(
       results: [],
       addResult: (result: Result) => set(({ results }) => ({ results: [...results, result] })),
     }),
-    { name: 'zustand-game-results-storage' }
+    { name: 'game-results-storage' }
   )
 );
 
