@@ -5,11 +5,7 @@ const deps = require('../package.json').dependencies;
 
 module.exports = {
   output: {
-    // path: path.resolve(__dirname, '../build'),
     publicPath: '/',
-    // publicPath: 'auto',
-    // filename: 'build.[contenthash].js',
-    // clean: true,
   },
 
   mode: 'development',

@@ -13,8 +13,8 @@
     "test:show-config": "jest --config=jest/jest.config.js --showConfig",
     "test:coverage": "jest --config=jest/jest.config.js --coverage",
     "test:watch": "jest --config=jest/jest.config.js --watch",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "cypress:open": "start-server-and-test 3300 'cypress open'",
+    "cypress:run": "start-server-and-test 3300 'cypress run'",
     "prepare": "husky"
   },
   "repository": {
@@ -64,6 +64,7 @@
     "prettier": "3.5.3",
     "sass": "1.89.1",
     "sass-loader": "16.0.5",
+    "start-server-and-test": "2.0.13",
     "style-loader": "4.0.0",
     "ts-jest": "29.4.1",
     "tsconfig-paths-webpack-plugin": "4.2.0",

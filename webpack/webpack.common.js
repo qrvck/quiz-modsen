@@ -10,7 +10,6 @@ module.exports = {
   entry: path.resolve(__dirname, '../src/index.ts'),
   output: {
     path: path.resolve(__dirname, '../build'),
-    // publicPath: '/',
     filename: 'build.[contenthash].js',
     clean: true,
   },
