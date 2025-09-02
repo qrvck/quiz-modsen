@@ -8,5 +8,21 @@
     ],
 
     "@babel/preset-typescript"
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "react-remove-properties",
+          {
+            "properties": ["data-cy"],
+            "ignoreFilenames": ["node_modules"]
+          }
+        ]
+      ]
+    },
+    "development": {
+      "plugins": []
+    }
+  }
 }
