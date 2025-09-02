@@ -7,8 +7,8 @@ module.exports = (env) => {
   const isProductionMode = env.production;
 
   if (isProductionMode) {
-    return merge(commonConfig, productionConfig);
+    return merge(commonConfig(env), productionConfig);
   }
   
-  return merge(commonConfig, developmentConfig);
+  return merge(commonConfig(env), developmentConfig);
 };
